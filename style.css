@@ -924,7 +924,7 @@ body {
         height: 180px;
         width: 180px;
         margin: 2% 2% 2% 2%;
-        filter: blur(0.1px);
+        filter: none;
     }
     .buttonOne .centerButtonThree .centerLight {
         filter: blur(0.1px);
