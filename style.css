@@ -45,7 +45,6 @@ body {
         #d4d4d45e 100%
     );
     box-shadow: 0px 0px 15px 2px rgba(30, 30, 30, 0.3);
-    filter: blur(0.3px);
 }
 
 .buttonOne .centerButtonOne {
@@ -167,7 +166,6 @@ body {
     border-radius: 50%;
     border: solid 6px rgba(110, 171, 209, 0.8);
     box-shadow: 0px 0px 2px 0.5px rgba(130, 202, 247, 0.7);
-    filter: blur(0.6px);
 }
 
 .buttonOne .centerButtonOne.active .centerButtonThree .centerLight {
@@ -328,7 +326,6 @@ body {
     box-shadow: 0px -5px 3px 2px rgba(114, 114, 114, 0.4) inset,
         0px 2px 0px 2px rgba(255, 255, 255, 0.9) inset,
         0px 5px 10px 2px rgba(30, 30, 30, 0.5);
-    filter: blur(0.1px);
 }
 
 .iconPhone::before {
@@ -418,7 +415,6 @@ body {
     box-shadow: 0px 3px 1px 0px rgba(92, 92, 92, 0.4) inset,
         0px 1px 1px 1px rgba(116, 116, 116, 0.3),
         0px -0.5px 1px 0.5px rgba(156, 156, 156, 0.6) inset;
-    filter: blur(0.4px);
 }
 
 .centerPhoneTwo::after {
@@ -448,7 +444,6 @@ body {
         #000000 40%,
         #000000 80%
     );
-    filter: blur(0.3px);
 }
 
 .centerPhoneDotTwo {
@@ -465,7 +460,6 @@ body {
         #0f0f0f 50%,
         #020202 80%
     );
-    filter: blur(0.3px);
 }
 
 .centerPhoneDotTwo::before {
@@ -516,7 +510,6 @@ body {
         #0f0f0f 50%,
         #020202 80%
     );
-    filter: blur(0.3px);
 }
 
 .centerPhoneDotThree::before {
@@ -571,7 +564,6 @@ body {
     box-shadow: 0px -5px 3px 2px rgba(114, 114, 114, 0.4) inset,
         0px 2px 0px 2px rgba(255, 255, 255, 0.9) inset,
         0px 5px 10px 2px rgba(30, 30, 30, 0.5);
-    filter: blur(0.5px);
 }
 
 .iconContact::before {
@@ -675,7 +667,6 @@ body {
         #000000c2 40%,
         #000000ea 80%
     );
-    filter: blur(0.5px);
 }
 
 .centerContactDotOne::before {
@@ -749,7 +740,6 @@ body {
     box-shadow: 0px -5px 3px 2px rgba(114, 114, 114, 0.4) inset,
         0px 2px 0px 2px rgba(255, 255, 255, 0.9) inset,
         0px 5px 10px 2px rgba(30, 30, 30, 0.5);
-    filter: blur(0.5px);
 }
 
 .iconEmail::before {
@@ -788,7 +778,6 @@ body {
     box-shadow: 0px -2px 2px 1px rgba(87, 87, 87, 0.5) inset,
         0px 4px 1px 0px rgba(255, 255, 255, 0.9) inset,
         0px 5px 8px 1px rgba(30, 30, 30, 0.6);
-    filter: blur(0.2px);
 }
 
 .centerEmailOne::before {
@@ -924,11 +913,8 @@ body {
         height: 180px;
         width: 180px;
         margin: 2% 2% 2% 2%;
-        filter: none;
     }
-    .buttonOne .centerButtonThree .centerLight {
-        filter: blur(0.1px);
-    }
+
     .buttonOne .centerButtonOne.active .diodeOnOff {
         box-shadow: 0px 0px 1px 0.5px rgba(143, 64, 0, 0.5),
             0px 0px 1px 0.5px rgba(139, 79, 0, 0.5) inset;
