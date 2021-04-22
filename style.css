@@ -901,6 +901,457 @@ body {
     box-shadow: 0px 15px 15px 2px rgba(26, 26, 26, 0.6);
 }
 
+/* box container */
+
+.box {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 2% 0 0 2%;
+    border-radius: 20%;
+    background-image: radial-gradient(
+        circle at 50% -80%,
+        #fffffff3 30%,
+        #f3f3f3fb 70%,
+        #aaaaaae5 90%,
+        #b9b9b9ec 100%
+    );
+    box-shadow: 0px -2px 0px 2px rgba(97, 97, 97, 0.3) inset,
+        0px 2px 0px 2px rgba(255, 255, 255, 0.5) inset,
+        0px 5px 10px 2px rgba(30, 30, 30, 0.5);
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+    background-image: radial-gradient(
+        circle at 50% 50%,
+        #ffffffd8 10%,
+        #e0e0e049 50%,
+        #c2c2c246 90%,
+        #d4d4d45e 100%
+    );
+    box-shadow: 0px 0px 15px 2px rgba(30, 30, 30, 0.3);
+}
+
+.boxCenterOne {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    width: 70%;
+    border-radius: 20%;
+    background-image: radial-gradient(
+        circle at 50% 100%,
+        #ffffffe5 20%,
+        #dadadbf3 50%,
+        #8d8d8d8c 80%
+    );
+    box-shadow: 0px 4px 2px 1px rgba(92, 92, 92, 0.4) inset,
+        0px 1px 1px 1px rgba(116, 116, 116, 0.3),
+        0px -4px 1px 0.5px rgba(199, 199, 199, 0.6) inset;
+}
+
+.boxCenterTwo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 93%;
+    width: 93%;
+    border-radius: 20%;
+    background-image: radial-gradient(
+        circle at 50% 50%,
+        #e7e7e77c 20%,
+        #cfcfcf73 50%,
+        #a8a8a854 80%
+    );
+    box-shadow: 0px 2px 2px 0.5px rgba(92, 92, 92, 0.6) inset,
+        0px -0.5px 1px 0.5px rgba(156, 156, 156, 0.6) inset;
+    overflow: hidden;
+}
+
+/* burger one */
+
+.One .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    cursor: pointer;
+}
+
+.One span,
+.Two span,
+.Three span {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to top,
+        #27afe670 10%,
+        #16a0d670 50%,
+        #24abe093 90%
+    );
+    box-shadow: 0px 2px 2px 0.5px #0191cac2 inset,
+        0px -0.5px 1px 0.5px #013b52c2 inset,
+        0 3px 10px 1px rgba(0, 0, 0, 0.596);
+}
+
+.One span::before,
+.Two span::before,
+.Three span::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-image: radial-gradient(
+        circle at 10% 100%,
+        #27afe670 10%,
+        #0c99d194 50%,
+        #23b6f0b9 90%
+    );
+}
+
+.One span + span {
+    margin-top: 17px;
+    animation: ease 0.5s;
+}
+
+.One .active span:nth-child(1) {
+    animation: one linear 0.5s forwards;
+    animation-delay: 0.25s;
+}
+
+.One .return span:nth-child(1) {
+    animation: oneBackwards linear 0.5s forwards;
+}
+
+.One .active span:nth-child(2) {
+    animation: two linear 0.5s forwards;
+}
+
+.One .return span:nth-child(2) {
+    animation: twoBackwards linear 0.5s forwards;
+}
+
+.One .active span:nth-child(3) {
+    animation: three linear 0.5s forwards;
+    animation-delay: 0.25s;
+}
+
+.One .return span:nth-child(3) {
+    animation: threeBackwards linear 0.5s forwards;
+}
+
+@keyframes one {
+    0% {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    15% {
+        top: -10px;
+        transform: rotate(0);
+    }
+
+    50% {
+        top: 27px;
+        transform: rotate(0);
+    }
+
+    100% {
+        top: 27px;
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes oneBackwards {
+    0% {
+        top: 27px;
+        transform: rotate(45deg);
+    }
+
+    50% {
+        top: 27px;
+        transform: rotate(0deg);
+    }
+
+    100% {
+        top: 0;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes three {
+    0% {
+        bottom: 0;
+        transform: rotate(0);
+    }
+
+    15% {
+        bottom: -10px;
+        transform: rotate(0);
+    }
+
+    50% {
+        bottom: 27px;
+        transform: rotate(0);
+    }
+
+    100% {
+        bottom: 27px;
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes threeBackwards {
+    0% {
+        bottom: 27px;
+        transform: rotate(135deg);
+    }
+
+    50% {
+        bottom: 27px;
+        transform: rotate(0);
+    }
+
+    100% {
+        bottom: 0;
+        transform: rotate(0);
+    }
+}
+
+@keyframes two {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes twoBackwards {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* burger two */
+
+.Two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Two .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+}
+
+.Two .button.active {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.Two span:nth-child(1) {
+    width: 50%;
+    transition: transform 0.3s cubic-bezier(0.7, -0.9, 0.1, 0.1);
+    transform-origin: right;
+}
+
+.Two .active span:nth-child(1) {
+    transform: rotate(-90deg) translateX(3px);
+}
+
+.Two span:nth-child(3) {
+    align-self: flex-end;
+    width: 50%;
+    transition: transform 0.3s cubic-bezier(0.7, -0.9, 0.1, 0.1);
+    transform-origin: left;
+}
+
+.Two .active span:nth-child(3) {
+    transform: rotate(-90deg) translateX(-3px);
+}
+
+/* burger three */
+
+.Three .button {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.Three span {
+    display: block;
+    position: absolute;
+}
+
+.Three span:nth-child(1) {
+    margin-top: 0px;
+}
+
+.Three span.center {
+    margin-top: 26px;
+}
+
+.Three span:nth-child(4) {
+    margin-top: 52px;
+}
+
+.Three .active span:nth-child(1) {
+    animation: oneT linear 0.15s forwards;
+}
+
+.Three .return span:nth-child(1) {
+    animation: oneBackwardsT linear 0.15s forwards;
+}
+
+.Three .active span:nth-child(2) {
+    animation: twoT linear 0.2s forwards;
+}
+
+.Three .return span:nth-child(2) {
+    animation: twoBackwardsT linear 0.2s forwards;
+}
+
+.Three .active span:nth-child(3) {
+    animation: threeT linear 0.2s forwards;
+}
+
+.Three .return span:nth-child(3) {
+    animation: threeBackwardsT linear 0.2s forwards;
+}
+
+.Three .active span:nth-child(4) {
+    animation: fourT linear 0.15s forwards;
+}
+
+.Three .return span:nth-child(4) {
+    animation: fourBackwardsT linear 0.15s forwards;
+}
+
+@keyframes oneT {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: -150px;
+    }
+}
+
+@keyframes oneBackwardsT {
+    0% {
+        right: -150px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes fourT {
+    0% {
+        right: 0;
+    }
+
+    100% {
+        right: 150px;
+    }
+}
+
+@keyframes fourBackwardsT {
+    0% {
+        right: 150px;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes twoT {
+    0% {
+        transform: rotate(0) scale(0);
+    }
+    0.1% {
+        transform: rotate(0) scale(1);
+    }
+
+    100% {
+        transform: rotate(45deg) scale(1);
+    }
+}
+
+@keyframes twoBackwardsT {
+    0% {
+        transform: rotate(45deg) scale(1);
+    }
+    99.9% {
+        transform: rotate(0) scale(1);
+    }
+    100% {
+        transform: rotate(0) scale(0);
+    }
+}
+
+@keyframes threeT {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes threeBackwardsT {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
 @media (max-width: 1025px) {
     body {
         justify-content: center;
@@ -908,7 +1359,8 @@ body {
     .buttonOne,
     .iconPhone,
     .iconContact,
-    .iconEmail {
+    .iconEmail,
+    .box {
         height: 180px;
         width: 180px;
         margin: 2% 2% 2% 2%;
