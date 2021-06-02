@@ -15,7 +15,7 @@ While learning HTML CSS and the beginnings of JavaScript, I wanted to create a p
 Here you will find a link to icons and buttons made by me:
 (https://pawel-serafinko.github.io/my-button-and-icon-styles/)
 
-### What I have learned and what obstacles I encountered
+## What I have learned and what obstacles I encountered
 
 How to create the impression of a bulging or lowering? 
 I had the idea to start at the bottom and add another layer inside to achieve the desired effect.
